@@ -17,7 +17,7 @@ pipeline {
                          variable: 'KUBECONFIG')
                 ]) {
                 sh '''
-                    helm upgrade -i users helm/. --set image.tag=${VERSION}
+                    helm upgrade -i redis helm/. --set image.tag=${VERSION}
                     
                   '''
                 }
