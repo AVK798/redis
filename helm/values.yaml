@@ -142,6 +142,14 @@ readinessProbe:
       - ping
   initialDelaySeconds: 5
 
+# livenessProbe:
+#   tcpSocket:
+#     port: 6379
+
+# readinessProbe:
+#   tcpSocket:
+#     port: 6379
+
 # This section is for setting up autoscaling more information can be found here: https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:
   enabled: false
